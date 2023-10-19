@@ -14,7 +14,7 @@ app.use('/files', express.static(path.join(__dirname, 'files')));
 
 app.get('/data', (req, res) => {
   return res.json({
-    Version: 1,
+    Version: 0,
     DownloadUrl: `http://localhost:${port}/files/debug.zip`
   });
 });
