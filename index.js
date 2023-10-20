@@ -20,7 +20,7 @@ app.get('/data', (req, res) => {
 });
 
 app.get('/updater', (req, res) => {
-    return res.json({UpdaterFile: `http://localhost:${port}/files/DaddyAIUpdater.exe`});
+    return res.json({UpdaterFile: `http://daddyai.onrender.com:${port}/files/DaddyAIUpdater.exe`});
 })
 
 app.listen(port, () => {
