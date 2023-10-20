@@ -15,7 +15,7 @@ app.use('/files', express.static(path.join(__dirname, 'files')));
 app.get('/data', (req, res) => {
   return res.json({
     Version: 1,
-    DownloadUrl: `http://localhost:${port}/files/debug.zip`
+    DownloadUrl: `http://daddyai.onrender.com:${port}/files/debug.zip`
   });
 });
 
