@@ -15,7 +15,7 @@ app.use('/files', express.static(path.join(__dirname, 'files')));
 app.get('/data', (req, res) => {
   return res.json({
     Version: 1,
-    DownloadUrl: `https://daddyai.onrender.com/files/debug.zip`
+    DownloadUrl: `https://github.com/SwyftPain/daddyai/releases/download/V1/debug.zip`
   });
 });
 
