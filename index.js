@@ -15,12 +15,12 @@ app.use('/files', express.static(path.join(__dirname, 'files')));
 app.get('/data', (req, res) => {
   return res.json({
     Version: 1,
-    DownloadUrl: `http://daddyai.onrender.com:${port}/files/debug.zip`
+    DownloadUrl: `https://daddyai.onrender.com/files/debug.zip`
   });
 });
 
 app.get('/updater', (req, res) => {
-    return res.json({UpdaterFile: `http://daddyai.onrender.com:${port}/files/DaddyAIUpdater.exe`});
+    return res.json({UpdaterFile: `https://daddyai.onrender.com/files/DaddyAIUpdater.exe`});
 })
 
 app.listen(port, () => {
